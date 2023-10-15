@@ -13,3 +13,6 @@ odm                     /odm           ext4    ro,barrier=1,discard      wait,sl
 # and fails if it does not find it.
 /dev/block/bootdevice/by-name/misc    /misc   emmc    defaults           defaults
 
+/sdcard          /dev/block/mmcblk1p1                vfat       flags=display=sdcard
+/metadata        /dev/block/bootdevice/by-name/metadata  ext4   flags=display=metadata
+/boot            /dev/block/bootdevice/by-name/boot   emmc      flags=display=boot

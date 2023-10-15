@@ -27,13 +27,13 @@ BOARD_VENDOR := $(or $(word 2,$(subst /, ,$(firstword $(MAKEFILE_LIST)))),$(valu
 PRODUCT_PLATFORM := holi
 
 # Release name
-PRODUCT_RELEASE_NAME := dre9
+PRODUCT_RELEASE_NAME := SCW_Sprout
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)
 PRODUCT_NAME := $(CUSTOM_VENDOR)_$(PRODUCT_DEVICE)
 PRODUCT_BRAND := $(BOARD_VENDOR)
-PRODUCT_MODEL := DE2117
+# PRODUCT_MODEL := DE2117
 PRODUCT_MANUFACTURER := $(PRODUCT_BRAND)
 
 # Inherit from hardware-specific part of the product configuration

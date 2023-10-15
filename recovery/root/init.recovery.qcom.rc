@@ -44,10 +44,14 @@ service mount-dynamic-rw /system/bin/mount-dynamic-rw.sh
 on init
     write /sys/class/backlight/panel0-backlight/brightness 200
     start boot-hal-1-1
-
+    setprop sys.usb.configfs 1
     # Create location for fs_mgr to store abbreviated output from filesystem
     # checker programs.
     mkdir /dev/fscklogs 0770 root system
+on property:ro.boot.usbcontroller=*
+    setprop sys.usb.controller ${ro.boot.usbcontroller}
+    write /sys/class/udc/${ro.boot.usbcontroller}/device/../mode peripheral
+
 
 on boot
     setprop sys.usb.config adb
