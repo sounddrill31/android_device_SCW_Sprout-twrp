@@ -15,5 +15,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_SCW_Sprout.mk
+    $(LOCAL_DIR)/twrp_SCW_sprout.mk
 

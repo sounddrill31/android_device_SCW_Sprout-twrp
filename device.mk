@@ -14,11 +14,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 # with "_a" and "_b" variants in the device. Note that the vendor can add more
 # more partitions to this list for the bootloader and radio.
 AB_OTA_PARTITIONS := \
-    boot \
-    system \
-    system_ext \
-    vendor \
-    vbmeta
+        system \
+        system_ext \
+        product \
+        vendor \
+        odm
+#    boot \
+#    system \
+#    system_ext \
+#    vendor \
+#    vbmeta
     # oplusstanvbk \
     # multiimgoem \
     # logo \

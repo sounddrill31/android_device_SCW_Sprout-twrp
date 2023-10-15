@@ -27,7 +27,7 @@ BOARD_VENDOR := $(or $(word 2,$(subst /, ,$(firstword $(MAKEFILE_LIST)))),$(valu
 PRODUCT_PLATFORM := holi
 
 # Release name
-PRODUCT_RELEASE_NAME := SCW_Sprout
+PRODUCT_RELEASE_NAME := SCW_sprout
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)
